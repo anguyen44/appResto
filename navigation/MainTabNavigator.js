@@ -9,6 +9,7 @@ import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ProfilScreen from '../screens/ProfilScreen';
 import Index3Screen from '../screens/Index3Screen';
+import SavoiPlusScreen from '../screens/SavoirPlusScreen';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -18,6 +19,7 @@ const config = Platform.select({
 const HomeStack = createStackNavigator(
   {
     Home: Index3Screen,
+    SavoirPlus: SavoiPlusScreen,
   },
   config
 );
